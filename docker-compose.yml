@@ -3,9 +3,9 @@ version: '2'
 services:
   ctfd:
     build: .
-    restart: always
+    # restart: always
     ports:
-      - "8000:8000"
+      - "18000:8000"
     environment:
       - UPLOAD_FOLDER=/var/uploads
       - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd
@@ -26,7 +26,7 @@ services:
 
   db:
     image: mariadb:10.4
-    restart: always
+    # restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=ctfd
       - MYSQL_USER=ctfd
@@ -40,7 +40,7 @@ services:
 
   cache:
     image: redis:4
-    restart: always
+    # restart: always
     volumes:
     - .data/redis:/data
     networks:

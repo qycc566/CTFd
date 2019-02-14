@@ -1,9 +1,9 @@
 html, body, .container {
-    font-family: 'Lato', 'LatoOffline', sans-serif;
+    font-family: 'Lato', 'LatoOffline', "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
 h1, h2 {
-    font-family: 'Raleway', 'RalewayOffline', sans-serif;
+    font-family: 'Raleway', 'RalewayOffline', "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     font-weight: 500;
     letter-spacing: 2px;
 }
@@ -42,11 +42,16 @@ pre {
 }
 
 .jumbotron {
-    /*background-color: #343a40;*/
+    /*background-color: #e9ecef;*/
     /*color: #FFF;*/
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
     border-radius: 0;
     text-align: center;
+    background-image: url("/themes/core_zh_cn/static/img/bg_cube.png");
 }
+
 
 .form-control {
     position: relative;
@@ -181,4 +186,18 @@ pre {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
+}
+
+
+.bg-nav-bar {
+    background: linear-gradient(135deg,#8f75da 0,#727cf5 60%)
+}
+
+body {
+    color: #6c757d;
+}
+
+.footer {
+    border-top: 0;
+    left: 0;
 }

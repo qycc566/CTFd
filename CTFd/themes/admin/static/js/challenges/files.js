@@ -24,8 +24,8 @@ $(document).ready(function () {
         var file_id = $(this).attr('file-id');
         var row = $(this).parent().parent();
         ezq({
-            title: "Delete Files",
-            body: "Are you sure you want to delete this file?",
+            title: "删除文件",
+            body: "请确认是否删除这个文件?",
             success: function () {
                 CTFd.fetch('/api/v1/files/' + file_id, {
                     method: 'DELETE',

@@ -5,8 +5,8 @@ $(document).ready(function () {
 
     $('.delete-team').click(function (e) {
         ezq({
-            title: "Delete Team",
-            body: "Are you sure you want to delete {0}".format("<strong>" + htmlentities(TEAM_NAME) + "</strong>"),
+            title: "删除战队",
+            body: "请确认是否删除 {0}".format("<strong>" + htmlentities(TEAM_NAME) + "</strong>"),
             success: function () {
                 CTFd.fetch('/api/v1/teams/' + TEAM_ID, {
                     method: 'DELETE',
@@ -36,7 +36,7 @@ $(document).ready(function () {
         var row = $(this).parent().parent();
 
         ezq({
-            title: "Delete Submission",
+            title: "删除提交",
             body: body,
             success: function () {
                 CTFd.fetch('/api/v1/submissions/' + submission_id, {

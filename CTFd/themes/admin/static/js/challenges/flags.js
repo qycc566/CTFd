@@ -98,8 +98,8 @@ $(document).ready(function () {
         var row = $(this).parent().parent();
 
         ezq({
-            title: "Delete Flag",
-            body: "Are you sure you want to delete this flag?",
+            title: "删除Flag",
+            body: "请确认是否删除这个Flag?",
             success: function () {
                 CTFd.fetch('/api/v1/flags/' + flag_id, {
                     method: 'DELETE',

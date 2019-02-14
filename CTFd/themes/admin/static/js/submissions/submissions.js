@@ -11,7 +11,7 @@ $(document).ready(function () {
         var td_row = $(this).parent().parent();
 
         ezq({
-            title: 'Delete Submission',
+            title: '删除提交',
             body: "Are you sure you want to delete correct submission from {0} for challenge {1}".format(
                 "<strong>" + htmlentities(team_name) + "</strong>",
                 "<strong>" + htmlentities(chal_name) + "</strong>"

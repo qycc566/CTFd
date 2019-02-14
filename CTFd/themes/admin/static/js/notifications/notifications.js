@@ -29,8 +29,8 @@ $(document).ready(function () {
         var notif_id = elem.attr("notif-id");
 
         ezq({
-            title: 'Delete Notification',
-            body: "Are you sure you want to delete this notification?",
+            title: '删除通知',
+            body: "请确认是否删除这条通知?",
             success: function () {
                 CTFd.fetch('/api/v1/notifications/' + notif_id, {
                     method: 'DELETE',

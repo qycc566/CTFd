@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $('.delete-user').click(function(e){
         ezq({
-            title: "Delete User",
-            body: "Are you sure you want to delete {0}".format("<strong>" + htmlentities(USER_NAME) + "</strong>"),
+            title: "删除用户",
+            body: "请确认是否删除 {0}".format("<strong>" + htmlentities(USER_NAME) + "</strong>"),
             success: function () {
                 CTFd.fetch('/api/v1/users/' + USER_ID, {
                     method: 'DELETE',

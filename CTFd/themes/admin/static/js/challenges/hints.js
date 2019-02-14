@@ -25,9 +25,9 @@ function loadhint(hintid) {
             });
         } else {
             ezal({
-                title: "Error",
-                body: "Error loading hint!",
-                button: "OK"
+                title: "错误",
+                body: "载入hint出现错误!",
+                button: "好的"
             });
         }
     });

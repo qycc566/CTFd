@@ -175,9 +175,9 @@ $(document).ready(function () {
         }).then(function (data) {
             if (data.success) {
                 ezal({
-                    title: "Success",
-                    body: "Your challenge has been updated!",
-                    button: "OK"
+                    title: "成功",
+                    body: "你的题目已更新!",
+                    button: "好的"
                 });
             }
         });

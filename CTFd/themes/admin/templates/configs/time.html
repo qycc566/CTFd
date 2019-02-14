@@ -3,17 +3,17 @@
 		<ul class="nav nav-tabs mb-3">
 			<li class="nav-item">
 				<a class="nav-link active" href="#start-date" aria-controls="start-date" role="tab" data-toggle="tab">
-					Start Time
+					开始时间
 				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#end-date" aria-controls="end-date" role="tab" data-toggle="tab">
-					End Time
+					结束时间
 				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#freeze-date" aria-controls="freeze-date" role="tab" data-toggle="tab">
-					Freeze Time
+					冻结时间
 				</a>
 			</li>
 		</ul>
@@ -28,36 +28,36 @@
 					</div>
 
 					<div class="form-group col-md-2">
-						<label for="start-month">Month:</label>
+						<label for="start-month">月:</label>
 						<input class="form-control start-date" id='start-month' name='start-month' min="0" max="12"
 							   type='number'>
 					</div>
 
 					<div class="form-group col-md-2">
-						<label for="start-day">Day:</label>
+						<label for="start-day">日:</label>
 						<input class="form-control start-date" id='start-day' name='start-day' min="0" max="31"
 							   type='number'>
 					</div>
 
 					<div class="form-group col-md-3">
-						<label for="start-year">Year:</label>
+						<label for="start-year">年:</label>
 						<input class="form-control start-date" id='start-year' name='start-year' type='number'>
 					</div>
 
 					<div class="form-group col-md-2">
-						<label for="start-hour">Hour:</label>
+						<label for="start-hour">时:</label>
 						<input class="form-control start-date" id='start-hour' name='start-hour' min="0" max="23"
 							   type='number'>
 					</div>
 
 					<div class="form-group col-md-3">
-						<label for="start-minute">Minute:</label>
+						<label for="start-minute">分:</label>
 						<input class="form-control start-date" id='start-minute' name='start-minute' min="0" max="59"
 							   type='number'>
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="start-timezone">Timezone:</label>
+						<label for="start-timezone">时区:</label>
 						<select class="form-control start-date" id="start-timezone">
 							<script>
                                 document.write('<option>' + moment.tz.guess() + '</option>');
@@ -70,19 +70,19 @@
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="start-local">Local Time:</label>
+						<label for="start-local">本地时间:</label>
 						<input class="form-control" id='start-local' type='text'
 							   placeholder="Start Date (Local Time)" readonly>
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="start-zonetime">Timezone Time:</label>
+						<label for="start-zonetime">时区时间e:</label>
 						<input class="form-control" id='start-zonetime' type='text'
 							   placeholder="Start Date (Timezone Time)" readonly>
 					</div>
 
 					<div class="form-group col-md-12">
-						<label>UTC Timestamp:</label>
+						<label>UTC时间戳:</label>
 						<input class="form-control" id='start' name='start' type='text'
 							   placeholder="Start Date (UTC timestamp)"
 							   {% if start is defined and start != None %}value="{{ start }}"{% endif %} readonly>
@@ -98,30 +98,30 @@
 					</div>
 
 					<div class="form-group col-md-2">
-						<label for="end-month">Month:</label>
+						<label for="end-month">月:</label>
 						<input class="form-control end-date" id='end-month' name='end-month' min="0" max="12"
 							   type='number'>
 					</div>
 
 					<div class="form-group col-md-2">
-						<label for="end-day">Day:</label>
+						<label for="end-day">日:</label>
 						<input class="form-control end-date" id='end-day' name='end-day' min="0" max="31"
 							   type='number'>
 					</div>
 
 					<div class="form-group col-md-4">
-						<label for="end-year">Year:</label>
+						<label for="end-year">年:</label>
 						<input class="form-control end-date" id='end-year' name='end-year' type='number'>
 					</div>
 
 					<div class="form-group col-md-2">
-						<label for="end-hour">Hour:</label>
+						<label for="end-hour">时:</label>
 						<input class="form-control end-date" id='end-hour' name='end-hour' min="0" max="23"
 							   type='number'>
 					</div>
 
 					<div class="form-group col-md-2">
-						<label for="end-minute">Minute:</label>
+						<label for="end-minute">分:</label>
 						<input class="form-control end-date" id='end-minute' name='end-minute' min="0"
 							   max="59" type='number'>
 					</div>
@@ -135,7 +135,7 @@
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="end-timezone">Timezone:</label>
+						<label for="end-timezone">时区:</label>
 						<select class="form-control end-date" id="end-timezone">
 							<script>
                                 document.write('<option>' + moment.tz.guess() + '</option>');
@@ -148,19 +148,19 @@
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="end-local">Local Time:</label>
+						<label for="end-local">本地时间:</label>
 						<input class="form-control" id='end-local' type='text'
 							   placeholder="End Date (Local Time)" readonly>
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="end-zonetime">Timezone Time:</label>
+						<label for="end-zonetime">时区时间:</label>
 						<input class="form-control" id='end-zonetime' type='text'
 							   placeholder="End Date (Timezone Time)" readonly>
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="end">UTC Timestamp:</label>
+						<label for="end">UTC时间戳:</label>
 						<input class="form-control" id='end' name='end' type='text'
 							   placeholder="End Date (UTC timestamp)"
 							   {% if end is defined and end != None %}value="{{ end }}"{% endif %} readonly>

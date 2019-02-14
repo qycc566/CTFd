@@ -142,9 +142,9 @@ function upload_logo(form) {
                     window.location.reload()
                 } else {
                     ezal({
-                        title: "Error!",
-                        body: "Logo uploading failed!",
-                        button: "Okay"
+                        title: "错误!",
+                        body: "Logo上传失败!",
+                        button: "好的"
                     });
                 }
             });
@@ -154,8 +154,8 @@ function upload_logo(form) {
 
 function remove_logo() {
     ezq({
-        title: "Remove logo",
-        body: "Are you sure you'd like to remove the CTF logo?",
+        title: "删除logo",
+        body: "请确认是否删除 CTF logo?",
         success: function () {
             var params = {
                 'value': null

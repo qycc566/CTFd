@@ -2,6 +2,9 @@ FROM python:2.7-alpine
 RUN apk update && \
     apk add python python-dev libffi-dev gcc make musl-dev py-pip mysql-client git openssl-dev
 
+# 配置 pip 加速镜像
+COPY pip.conf /root/.pip/pip.conf
+
 WORKDIR /opt/CTFd
 RUN mkdir -p /opt/CTFd
 
